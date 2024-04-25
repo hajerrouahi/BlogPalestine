@@ -1,0 +1,336 @@
+
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling */
+
+.user-icon {
+    font-size: 1.5rem;
+}
+
+.user-icon i {
+    color: green;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    line-height: 1.6;
+    color: #333;
+}
+
+.navbar {
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h1 {
+    color: green;
+    margin-left: 20px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+.navbar a {
+    color: green;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: black;
+}
+
+.post-form textarea {
+    width: calc(100% - 20px);
+    height: 80px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+    border: none;
+}
+
+.post-form input[type="file"] {
+    display: none; /* Hide the file input */
+}
+
+.file-upload {
+    display: inline-block;
+    background-color: red;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.file-upload:hover {
+    background-color: black;
+}
+
+.file-upload i {
+    font-size: 20px;
+}
+
+.post-form button {
+    background-color: green;
+    color: #fff;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.post-form button:hover {
+    background-color: black;
+}
+
+.post {
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.post-header h3 {
+    color: red;
+    margin-right: 10px;
+}
+
+.post-header span {
+    color: #777;
+}
+
+.post-actions button {
+    background-color: transparent;
+    border: none;
+    color: green;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.post-actions button:hover {
+    color: black;
+}
+
+.comment-input {
+    width: calc(100% - 20px);
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#espace {
+    width: calc(1002px);
+    margin-bottom: 20px;
+    padding: 15px;
+    margin-left: -22px;
+    background-color: gainsboro;
+    box-shadow: #777;
+}
+
+.comments {
+    margin-top: 10px;
+}
+
+.comment {
+    margin-bottom: 5px;
+    padding: 5px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #777;
+}
+
+.post-actions button.liked {
+    color: red;
+}
+
+.post-actions .comment-button {
+    background-color: transparent;
+    border: none;
+    color: black;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.post-actions .comment-button:hover {
+    color: red;
+}
+
+.post-actions .comment-button i {
+    margin-right: 5px;
+}
+
+/* Style for post comment button */
+.post-actions #post-comment-button {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    padding: 4px 10px; /* Padding */
+    border-radius: 5px; /* Rounded corners */
+    border: none; /* No border */
+    cursor: pointer; /* Cursor style */
+    transition: background-color 0.3s ease; /* Transition */
+}
+
+.post-actions .post-comment-button:hover {
+    background-color: #45a049; /* Darker green background on hover */
+}
+
+/* Style for posted image and video */
+.posted-media {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+
+.user-icon {
+    font-size: 1.5rem;
+}
+.user-icon i{
+    width: 150px;
+    height: 150px;
+}
+
+#myid{
+    margin-left: 500px;
+    margin-top: -30px;
+}
+.dropbtn {
+color: green;
+padding: 16px;
+font-size: 36px;
+border: none;
+cursor: pointer;
+margin-left: -120px;
+}
+
+.dropdown {
+position: relative;
+display: inline-block;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+right: 0;
+margin-left: -150px;
+background-color: #f9f9f9;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+
+.dropdown-content a:hover {background-color:red;}
+.dropdown-content a:hover {color:white;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+
+
+
+
+ 
+
+  /* Style for the close icon */
+  .close-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: red;
+}/* Style for the vertical navbar */
+.vertical-navbar {
+    position: fixed;
+    border-radius: 20px;
+    box-shadow: rgba(155, 154, 154, 0.2);
+    left:0;
+    top: 130px;
+    width: 420px;
+    height: 700px;
+    background-color:white;
+    padding: 20px;
+    display: none; /* Initially hidden */
+    z-index: 1000; /* Ensure it appears above other content */
+  }
+
+   /* Style for the profile image */
+   .profile-icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    cursor: pointer;
+    align-items: center;
+}
+#frm input{
+    border-radius: 2px;
+    width: 300px;
+  box-shadow: none;
+  font-size: 14px;
+  height: 40px;
+  border-radius: 4px;
+  border-color:rgb(224, 223, 223);
+}
+#frm button{
+    background-color:green;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+}
+
+
+
+
+
+
